@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Day';
+    src: url(/assets/fonts/Daydream\ DEMO.otf) format('opentype');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    
+}
+#background-video { 
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
+    position: fixed; 
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    bottom: 0; 
+    z-index: -1; }
+            
+nav{
+    /* From https://css.glass */
+    font-family: 'Day';
+    font-size: 10px;
+    background: rgba(255, 255, 255, 0.034);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.027);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0px 10px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;    
+    align-items: center;        
+    gap:15%;                  
+    flex-wrap: wrap;
+    padding: 1%;
+    margin: 0 auto;     
+}
+nav ul li a{
+    color: rgba(248, 248, 248, 1);
+    text-decoration: none;
+}   
+.navItem {
+    padding: 4px;
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.3s ease-out; 
+}
+
+
+.container-itens:hover .navItem {
+    filter: blur(1px);
+    color: brown;
+}
+
+
+.container-itens .navItem:hover {
+    filter: blur(0px);
+    transform: scale(1.2); 
+    color: blue;
+   
+}
